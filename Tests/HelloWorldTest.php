@@ -43,5 +43,12 @@ class HelloWorldTest extends PHPUnit_Framework_TestCase
 
         $this->assertEquals('Bar', $helloWorld->what());
     }
+
+    public function testWhy()
+    {
+        $helloWorld->hello('9999999');
+
+        $this->assertEquals('678', $helloWorld->what());
+    }
 }
 
